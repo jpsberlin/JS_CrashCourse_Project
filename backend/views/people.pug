@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    h1 The number of the people is #{people.length}
+    each techyogi in people
+      pre #{JSON.stringify(techyogi, null, 4)}
